@@ -1,0 +1,378 @@
+
+
+/**/
+
+body {
+   background-color: rgb(255, 255, 255);
+   text-align: center;
+   padding: 0;
+   margin: 0;
+}
+.content {
+  text-align: center;
+}
+
+.top {
+  padding-top: 20px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.poster {
+  flex-basis: 50%;
+  min-width: 300px;
+}
+.poster img {
+  max-width: 100%;
+  padding: 50px 0;
+}
+.poster h2 {
+  font-size: 50px;
+  line-height: 60px;
+  margin: 20px 0;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.top {
+  display: flex;
+}
+
+.logo {
+  margin-top: 0px;
+  margin-left: 100px;
+}
+
+.account {
+  margin-left: 750px;
+  margin-top: 35px;
+}
+
+.cart {
+  margin-top: 35px;
+}
+
+.menu {
+  background-color: #6e6464;
+  min-height: 30px;
+}
+.menu li {
+  display: inline;
+  padding: 40px 45px;
+  line-height: 30px;
+}
+
+.menu li a {
+  color: cornsilk;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  color: crimson;
+}
+
+.hot {
+  padding: auto;
+  margin-left: 30px;
+  padding-bottom: 100px;
+}
+
+.hot #pic1:hover {
+  position: relative;
+  top: -25px;
+  left: -35px;
+  width: 400px;
+  height: auto;
+  display: inline;
+  z-index: 999;
+  transform: translate(-5px);
+  transition: transform 0.5s;
+}
+.hot #pic2:hover {
+  position: relative;
+  top: -25px;
+  left: -35px;
+  width: 400px;
+  height: auto;
+  display: inline;
+  z-index: 999;
+  transform: translate(-5px);
+  transition: transform 0.5s;
+}
+
+.hot #pic3:hover {
+  position: relative;
+  top: -25px;
+  left: -35px;
+  width: 400px;
+  height: auto;
+  display: inline;
+  z-index: 999;
+  transform: translate(-5px);
+  transition: transform 0.5s;
+}
+
+.info-word {
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+
+.info-word {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+}
+
+.suggestion {
+  padding: auto;
+  margin-left: 30px;
+}
+
+.suggestion #pic1:hover {
+  position: relative;
+  top: -25px;
+  left: -35px;
+  width: 400px;
+  height: auto;
+  display: inline;
+  z-index: 999;
+  transform: translate(-5px);
+  transition: transform 0.5s;
+}
+.suggestion #pic2:hover {
+  position: relative;
+  top: -25px;
+  left: -35px;
+  width: 400px;
+  height: auto;
+  display: inline;
+  z-index: 999;
+  transform: translate(-5px);
+  transition: transform 0.5s;
+}
+
+.suggestion #pic3:hover {
+  position: relative;
+  top: -25px;
+  left: -35px;
+  width: 400px;
+  height: auto;
+  display: inline;
+  z-index: 999;
+  transform: translate(-5px);
+  transition: transform 0.5s;
+}
+
+.introduce {
+  background: rgb(102, 114, 205);
+}
+
+<!-- Body --- > .content {
+  width: 100%;
+  margin: 0px auto;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.product .info1 {
+  width: 20%;
+}
+.product .inf-product a {
+  text-decoration: none;
+  color: black;
+}
+.product .inf-product a:hover {
+  color: red;
+}
+.product .picture-product img {
+  width: 400px;
+  height: 400px;
+  display: block;
+  margin: 0 auto;
+}
+.product .inf-product {
+  text-align: center;
+}
+.container {
+  margin-top: 50px;
+}
+input[type="radio"] {
+  display: none;
+}
+label {
+  position: relative;
+  color: rgb(115, 199, 6);
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  border: 3px solid rgb(12, 15, 8);
+  border-radius: 25px;
+  padding: 10px 30px;
+  display: inline;
+  align-items: center;
+  cursor: pointer;
+}
+label::before {
+  content: "";
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  border: 5px solid rgb(115, 199, 6);
+  border-radius: 50%;
+  margin-right: 20px;
+}
+input[type="radio"]:checked + label {
+  background-color: rgb(115, 199, 6);
+  color: white;
+}
+input[type="radio"]:checked + label::before {
+  content: "✔️";
+  height: 16px;
+  width: 16px;
+  border: 5px solid white;
+  background-color: rgb(115, 199, 6);
+}
+
+.info-product {
+  margin-top: 10px;
+}
+.product-top {
+  width: 50%;
+}
+
+.product-top-big-img {
+  width: 75%;
+  padding-right: 10px;
+}
+
+.product-top-big-img img {
+  width: 80%;
+  height: 430px;
+  border: 2px solid black;
+}
+
+.product-top-small-img {
+  width: 20%;
+}
+
+.product-top-small-img img {
+  width: 100%;
+  border: 2px solid black;
+}
+
+.product-bottom-button {
+  display: inline-flex;
+  padding-bottom: 50px;
+}
+
+.quantity {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.quantity input {
+  width: 40px;
+}
+
+.buy {
+  margin-right: 40px;
+  height: 50px;
+  padding: 0;
+  background: white;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 15px;
+  height: 50px;
+  width: 200px;
+  overflow: hidden;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.buy:hover {
+  background: #a39189;
+}
+
+.add-to-cart {
+  height: 50px;
+  padding: 0;
+  background: white;
+  border: 2px solid black;
+  outline: none;
+  border-radius: 5px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 15px;
+  overflow: hidden;
+  height: 50px;
+  width: 200px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.add-to-cart:hover {
+  background: #a39189;
+}
+
+.suggestion {
+  margin-top: 20px;
+}
+
+.cart-page {
+  margin: 80px 150px;
+}
+
+.cart-page table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: center;
+  padding: 5px;
+  color: #fff;
+  background: #ff523b;
+  font-weight: normal;
+}
+.total-price {
+  display: flex;
+  padding-left: 63%;
+}
+
+.total-price table {
+  border-top: 3px solid #ff523b;
+  width: 100%;
+  max-width: 350px;
+}
+
+td:last-child {
+  text-align: right;
+}
+th:last-child {
+  text-align: right;
+}
+
+.buy-cart {
+  margin-top: 20px;
+  width: 200px;
+  margin-left: 63%;
+}
+
+.customer-information {
+  border-radius: 3px;
+  width: auto;
+  font-size: 25px;
+  margin: 20px 450px;
+  padding: 20px;
+  padding-top: 60px;
+} 
+
+ 
